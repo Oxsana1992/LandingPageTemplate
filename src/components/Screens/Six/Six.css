@@ -1,0 +1,114 @@
+.scsix__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background: var(--color-white);
+  margin: var(--spacing-large) 0;
+} 
+.scsix__item {
+  width: 743px;
+}
+.scsix__icon_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: var(--spacing-large) 0;
+}
+.accordion {
+  color: var(--accordion-textlight);
+  background: var(--accordion-background);
+  overflow: hidden;
+  margin-bottom: var(--spacing-large);
+}
+.accordion__tab {
+  border-bottom: 2px solid var(--accordion-primary);
+}
+/* Core styles/functionality */
+.accordion__tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab__content {
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+  justify-content: space-around;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+  margin-left: 50px;
+}
+.accordion__tab input:checked ~ .tab__content {
+  max-height: 10rem;
+}
+.accordion__tab input:checked + label {
+  color: var(--accordion-dark);
+}
+/* Visual styles */
+.tab__label {
+  display: flex;
+  color: var(--accordion-textlight);
+  background: var(--accordion-highlight);
+  cursor: pointer;
+  justify-content: start;
+  padding: 1rem;
+}
+.tab__label::before {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  margin-right: 25px;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+}
+.accordion__tab input:checked + .tab__label::before {
+  transform: rotate(270deg);
+  color: var(--accordion-dark);
+}
+.accordion_text {
+  width: 391px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #8d96bd;
+  margin-bottom: var(--spacing-medium);
+}
+.accordion_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 195px;
+  height: 43px;
+  background: #e8ecf4;
+  border-radius: 2px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #7382a3;
+  cursor: pointer;
+}
+/* Arrow animation */
+.accordion__tab input:not(:checked) + .tab__label:hover::before {
+  animation: bounce 0.5s infinite;
+}
+@keyframes bounce {
+  25% {
+    transform: rotate(90deg) translate(0.25rem);
+  }
+  75% {
+    transform: rotate(90deg) translate(-0.25rem);
+  }
+}

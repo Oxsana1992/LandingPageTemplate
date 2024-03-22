@@ -1,0 +1,108 @@
+.scfive__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var( --color-sconebg);
+    padding-top: 100px;
+    padding-bottom: var(--spacing-large);
+    background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+}
+.scfive__item {
+    display: flex;
+    justify-content: space-evenly;
+}
+.scfive__testimonials_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 333px;
+    height: 188px;
+    text-align: left;
+}
+.testimonials_text_left {
+    width: 323px;
+    height: 78.16px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #A4ABC8;
+}
+.scfive__testimonials_gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 262px;
+}
+.testimonials__gallery {
+    display: flex;
+    justify-content: start;
+    margin: var(--spacing-medium) 0;
+    max-width: 500px;
+}
+.testimonials__gallery_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: var(--spacing-medium);
+    width: 423px;
+    height: 207px;
+    background: var(--color-white);
+    border: 1px solid #D8E3FE;
+    box-shadow: 0px 5px 50px #F3F5FA;
+}
+.closed {
+    display: none;
+}
+.testimonials__gallery_text {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 423px;
+    height: 207px;
+}
+.testimonials__text {
+    width: 283px;
+    height: 120px;
+    margin-top: var(--spacing-medium);
+    text-align: left;
+}
+.testimonials__img {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    left: 181px;
+    top: 175px;
+}
+.testimonials__img img {
+    width: 100%;
+}
+.testimonials__gallery_circles {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: var(--spacing-small) 0;
+}
+.transparent {
+    width: 211px;
+    opacity: 0.45;
+    filter: drop-shadow(0px 15px 50px #D4DCF1);
+}
+.transparent .testimonials__gallery_text {
+    width: 211px;
+    overflow-y: hidden;
+    justify-content: end;
+
+}
+.transparent .testimonials__gallery_text .testimonials__text {
+    padding-right: 0;
+    margin-right: 0;
+    width: 70%;
+    overflow: hidden;
+}
+.transparent .testimonials__img {
+    display: none;
+}

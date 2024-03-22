@@ -1,0 +1,212 @@
+.scthree__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: var( --color-white);
+    background-image: url('https://github.com/Oxsana1992/LandingPageTemplate/blob/main/img/Scthree/bg_scthree.png?raw=true');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+.scthree__item, .scthree__item_about {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: var(--spacing-large);
+}
+.scthree__text {
+    margin-top: 180px;
+    margin-bottom: var(--spacing-medium);
+}
+.scthree__about_icons {
+    max-width: 800px;
+    height: 254px;
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    list-style: none;
+    padding: 0;
+}
+.scthree__about_icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.about_icon {
+    width: 140px;
+    height: 254px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.scthree__about_img {
+    width: 69px;
+    height: 69px;
+}
+.scthree__about_title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--color-aboutitle);
+}
+.scthree__about_text {
+    width: 140px;
+    height: 102px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-grey);
+}
+.scthree__line_active {
+    width: 28px;
+    display: flex;
+    align-items: center;
+    margin: 0 var(--spacing-small);
+}
+.scthree__line_none {
+    display: none;
+}
+.scthree__btn {
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    width: 337px;
+    margin: var(--spacing-large) 0;
+}
+.scthree__btn_pink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 113px;
+    height: 43px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    color: var(--color-red);
+    background-color: var(--color-pinkbtn);
+    border-radius: 2px;
+    margin: auto;
+    padding: auto;
+    cursor: pointer;
+}
+.scthree__btn_or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-grey);
+    margin: auto;
+    padding: auto;
+}
+.scthree__btn_blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 113px;
+    height: 43px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    color: var(--color-blue);
+    background-color: var(--color-lightblbtn);
+    border-radius: 2px;
+    margin: auto;
+    padding: auto;
+    cursor: pointer;
+}
+.scthree__btn_or svg {
+    margin: 0 var(--spacing-small);
+}
+.scthree__icons {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+.scthree__icon_custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+    width: 50%;
+    padding: var(--spacing-large);
+}
+.scthree__custom_img img {
+    width: 65px;
+    height: 66px;
+}
+.custom__text_big {
+    width: 96px;
+    height: 84px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 83px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: var(--color-white); 
+}
+.custom__text {
+    width: 260px;
+    height: 45px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: var(--color-white); 
+}
+.scthree__icon_users {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+    width: 50%;
+    padding: var(--spacing-large);
+}
+.scthree__users_img img {
+    width: 71px;
+    height: 62px;
+}
+
+.users__text_big {
+    width: 99px;
+    height: 84px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 83px;
+    letter-spacing: 0.03em;
+    color: var(--color-main);
+}
+.users__text {
+    width: 260px;
+    height: 45px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+    letter-spacing: 0.03em;
+    color: var(--color-main);
+}
